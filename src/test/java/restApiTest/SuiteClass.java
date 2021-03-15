@@ -8,7 +8,7 @@ import org.junit.runners.Suite;
 
 @Suite.SuiteClasses({
    UserDomainTesting.class,
-   //UsersTesting.class
+   UsersTesting.class
 })
 
 public class SuiteClass {
