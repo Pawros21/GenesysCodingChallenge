@@ -50,6 +50,16 @@ public class UserDomainTesting {
 		
 		String domain = "gmail.com";
 		
+		//Assigning specific domain to the url
+		urlDom = urlDom + domain;
+		//checking for the response list
+		
+		//String r =  given().headers(header).
+				//when().get(urlDom).body().asString();
+		//verify the length of the array
+				
+		//create a new user
+				
 //		user.put("email", "domainTest5@" + domain);
 //		
 //		String s = given().contentType(ContentType.JSON).headers(header).body(user).
@@ -59,12 +69,13 @@ public class UserDomainTesting {
 //		
 //		assertEquals("{\"message\": \"User is created\"}", s);
 		
-		//Assigning specific domain to the url
-		urlDom = urlDom + domain;
+		//verify response array again and check if it was increased by one
 		String r =  given().headers(header).
 				when().get(urlDom).body().asString();
 		
 		System.out.print(r);
+		//assert equals statement should compare the initial response with the response after the user was created
+		//result should give true as the response should equal to the previous response +1
 		//assertEquals("{\"message\": \"User is deleted\"}", r);
 	}
 	
